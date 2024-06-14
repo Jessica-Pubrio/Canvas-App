@@ -235,7 +235,7 @@ const leavePlaceBet = (e) => {
   e.target.getStage().container().style.cursor = 'default'
 };
 const hoverText = (e) => {
-    if(balance.value < betAmount.value || betAmount.value <= 10){
+    if( balance.value < betAmount.value ){
         e.target.getStage().container().style.cursor = 'not-allowed'
     }else{
         e.target.getStage().container().style.cursor = 'pointer'
